@@ -1,4 +1,3 @@
-import React from 'react';
 import { Clock, Zap, Trophy } from 'lucide-react';
 import { GameStats } from '../types';
 
@@ -7,8 +6,8 @@ interface ScoreBoardProps {
 }
 
 export function ScoreBoard({ stats }: ScoreBoardProps) {
-  const accuracy = stats.totalAttempts === 0 
-    ? 0 
+  const accuracy = stats.totalAttempts === 0
+    ? 0
     : Math.round((stats.correctGuesses / stats.totalAttempts) * 100);
 
   return (

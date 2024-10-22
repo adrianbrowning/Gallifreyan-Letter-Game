@@ -1,11 +1,19 @@
-import React from 'react';
-
 export function LetterC() {
   return (
-    <g>
-      <circle cx="50" cy="50" r="40" className="stroke-current fill-none" strokeWidth="2"/>
-      <path d="M30 30 A25 25 0 0 1 70 30" className="stroke-current fill-none" strokeWidth="2"/>
-      <circle cx="50" cy="70" r="4" className="fill-current"/>
-    </g>
+      <>
+          <defs/>
+          <rect stroke="#0c0329" stroke-width="1" fill="#0c0329" x="0" y="0" width="800" height="800"
+                style={{position: "absolute"}}/>
+          <circle stroke="#ffc67e" stroke-width="2" fill="none" cx="396" cy="528" r="131.9999999998838"
+                  style={{position: "absolute"}}/>
+          <circle stroke="#ffc67e" stroke-width="2" fill="none" cx="396" cy="590" r="65.99999999988381"
+                  style={{position: "absolute"}}/>
+          <circle stroke="#ffc67e" stroke-width="2" fill="none" cx="445" cy="551" r="1" style={{position: "absolute"}}/>
+          <circle stroke="#ffc67e" stroke-width="2" fill="none" cx="431" cy="539" r="1" style={{position: "absolute"}}/>
+          {/*<circle stroke="#ffc67e" stroke-width="2" fill="none" cx="396" cy="396" r="316.8"*/}
+          {/*        style={{position: "absolute"}}/>*/}
+          {/*<circle stroke="#ffc67e" stroke-width="2" fill="none" cx="396" cy="396" r="320.8"*/}
+          {/*        style={{position: "absolute"}}/>*/}
+      </>
   );
 }

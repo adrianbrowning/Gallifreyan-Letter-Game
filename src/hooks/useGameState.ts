@@ -42,10 +42,10 @@ export function useGameState() {
       ...letter,
       weight: 1 + (letter.attempts === 0 ? 3 : letter.attempts - letter.correct),
     }));
-    
+
     const totalWeight = weightedLetters.reduce((sum, letter) => sum + letter.weight, 0);
     let random = Math.random() * totalWeight;
-    
+
     for (const letter of weightedLetters) {
       random -= letter.weight;
       if (random <= 0) {
@@ -68,7 +68,7 @@ export function useGameState() {
     newStats.bestStreak = Math.max(newStats.bestStreak, newStats.streak);
     setStats(newStats);
 
-    setLetters(prev => prev.map(letter => 
+    setLetters(prev => prev.map(letter =>
       letter.id === currentLetter.id
         ? {
             ...letter,
